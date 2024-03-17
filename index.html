@@ -1,0 +1,210 @@
+<!-- https://checklist-integrador-js.vercel.app/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Integrador NUCBA - JS</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="header__navbar">
+        <h2 class="header__navbar__tittle">VILLE PLANT</h2>
+        <div class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="header__navbar__list">
+          <li>
+            <a class="navbar-link" href="#main__plant__products">Productos</a>
+          </li>
+          <li><a class="navbar-link" href="#main__about">Nosotros</a></li>
+          <li><a class="navbar-link" href="#main__contact">Contacto</a></li>
+
+          <a href="./login.html">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </ul>
+
+        <div class="cart-label">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <div class="cart">
+          <h3>Productos agregados</h3>
+
+          <div class="cart-container"></div>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span class="total"></span>
+          </div>
+
+          <button class="btn-buy">Comprar</button>
+          <button class="btn-delete">Vaciar carrito</button>
+        </div>
+        <div class="overlay"></div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="main__hero">
+        <div class="main__hero__presentation">
+          <h2>Stay green</h2>
+          <h6>¡Nuevo!</h6>
+          <h5>Plantas seguras para mascotas</h5>
+        </div>
+      </section>
+      <section id="main__plant__products">
+        <h2>Nuestros productos</h2>
+        <div class="main__plant__container">
+          <div class="main__plant_product">
+            <img
+              class="main__plant__products__img"
+              src="./assets/img-3-interior-1.jpeg"
+              alt="plantas en macetas sobre una estantería, con múltiples módulos"
+            />
+            <h3>Plantas de interior</h3>
+          </div>
+          <div class="main__plant_product">
+            <img
+              class="main__plant__products__img"
+              src="./assets/img-4-exterior-2.jpeg"
+              alt="planta de exterior, con hojas grandes"
+            />
+            <h3>Plantas de exterior</h3>
+          </div>
+          <div class="main__plant_product">
+            <img
+              class="main__plant__products__img"
+              src="./assets/img-5-p-pets.jpeg"
+              alt="perro con collar rodeado de macetas"
+            />
+            <h3>Plantas pet-friendly</h3>
+          </div>
+        </div>
+        <section id="plant__products__container">
+          <div class="categories">
+            <button class="category active">Todas</button>
+            <button class="category" data-category="interior">Interior</button>
+            <button class="category" data-category="exterior">Exterior</button>
+            <button class="category" data-category="pet-friendly">
+              Pet-friendly
+            </button>
+          </div>
+          <div class="product__container"></div>
+          <button class="btn-show-more">Ver más</button>
+        </section>
+      </section>
+      <section class="main__find">
+        <div class="main__find__card">
+          <h3>14 dias de garantia</h3>
+          <p>
+            Te garantizamos plantas saludables cuando las recibas. Si llegaron
+            dañadas, las reemplazamos hasta 14 días después de la entrega.
+            <span>Envianos un email</span> con las fotos y te contactaremos.
+          </p>
+        </div>
+      </section>
+      <section id="main__about">
+        <div class="main__about__us">
+          <h2>Nuestra historia</h2>
+          <p class="about__us__p1">
+            Creemos en los beneficios positivos para la salud mental, emocional
+            y física asociado con tener vegetación en el espacio.
+          </p>
+          <p class="about__us__p2">
+            Somos de la provincia de Córdoba y sentimos que tenemos lugares muy
+            especiales.
+          </p>
+          <p class="about__us__p2">
+            Las sierras de nuestra provincia nos inspiran a
+            <span
+              >brindar un poco de nuestra vegetación a lo largo y ancho de
+              nuestro pais,</span
+            >
+            esto significa para nosotros poder dar un poco de color, un poco de
+            vida y un poco de sierras en tu espacio diario.
+          </p>
+        </div>
+        <img
+          class="img-sierras"
+          src="./assets/sierras-cba.jpg"
+          alt="sierras córdobesas con un gran lago en frente"
+        />
+      </section>
+      <section id="main__contact">
+        <h2>Contacto</h2>
+        <div class="main__contact__container">
+          <p>
+            ¿Dudas sobre ciudados? ¿Problemas para comprar? No te preocupes,
+            somos un equipo comprometido, obtendras una respuesta en un lapso de
+            24 horas hábiles.
+          </p>
+        </div>
+        <div class="main__contact__form">
+          <form>
+            <label for="nombre"></label>
+            <input type="text" id="nombre" placeholder="Nombre" />
+
+            <label for="correo"></label>
+            <input type="email" id="correo" placeholder="Email" />
+
+            <label for="texto"></label>
+            <textarea
+              id="texto"
+              cols="60"
+              rows="12"
+              placeholder="Escriba su mensaje aqui"
+            ></textarea>
+
+            <input id="btn-submit" type="submit" id="Enviar" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <div class="footer__-principal-content">
+          <h2 class="header__navbar__tittle">VILLE PLANT</h2>
+          <h4>Dale color a tu inbox!</h4>
+          <p>Obtené un 15% de descuento suscribiendote a nuestro newsletter.</p>
+          <div>
+            <input
+              id="input__email__footer"
+              type="email"
+              placeholder="Ingrese su email"
+            />
+
+            <button type="submit" id="input__btn__footer">Enviar</button>
+          </div>
+        </div>
+        <div class="footer__list">
+          <h3 class="footer__tittle">Enlaces de utilidad</h3>
+          <ul>
+            <li>Envios</li>
+            <li>Problemas comunes</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+
+        <div class="footer__list__recomendations">
+          <h3 class="footer__tittle">Información</h3>
+          <ul>
+            <li>El origen de nuestros productos</li>
+            <li>La importancia de del verde en un espacio</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="mesagge-modal"></div>
+    <script src="./data.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
