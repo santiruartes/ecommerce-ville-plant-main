@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 :root {
   font-family: 'Poppins', 'Montserrat', 'Times New Roman';
   --black: #000000;
@@ -38,6 +40,7 @@
     0.5px 19.7px 26.6px -0.9px hsl(var(--shadow-color) / 0.08),
     0.7px 26.7px 36.1px -1px hsl(var(--shadow-color) / 0.09);
 }
+
 /* Página de registro/login */
 #login {
   display: flex;
@@ -49,6 +52,7 @@
   height: 100vh;
   width: 100%;
 }
+
 .login__cont,
 .register__section {
   display: flex;
@@ -61,12 +65,14 @@
   background: rgba(241, 241, 241, 0.8);
   box-shadow: var(--shadow-elevation-high);
 }
+
 .login__cont h2 {
   text-align: center;
   color: var(--black);
   font-size: 32px;
   font-weight: 500;
 }
+
 .login__back,
 .register__back {
   display: flex;
@@ -80,6 +86,7 @@
   background-color: var(--color-5);
   border-radius: 5px;
 }
+
 .login__send,
 .register__send {
   display: flex;
@@ -93,6 +100,7 @@
   height: 10%;
   padding: 15px;
 }
+
 .login__cont input,
 .register__section input {
   font-family: Poppins;
@@ -104,6 +112,7 @@
   font-size: 14px;
   height: 35px;
 }
+
 #register {
   display: flex;
   align-items: center;
@@ -114,6 +123,7 @@
   height: 100vh;
   width: 100%;
 }
+
 .register__section {
   display: flex;
   justify-content: center;
@@ -124,21 +134,25 @@
   border-radius: 15px;
   background: rgba(241, 241, 241, 0.8);
 }
+
 .register__section h2 {
   text-align: center;
   color: var(--btn-black);
   font-size: 32px;
   font-weight: 500;
 }
+
 .register__section p {
   text-align: center;
   color: var(--btn-black);
   font-size: 16px;
 }
+
 /* Header  */
 #header {
   height: 65px;
 }
+
 .header__navbar {
   display: flex;
   justify-content: space-between;
@@ -146,27 +160,30 @@
   gap: 15px;
   list-style-type: none;
 }
+
 /* Toggle */
 .header__navbar label {
   display: none;
   font-size: 36px;
 }
+
 .header__navbar__list {
   display: flex;
   gap: 25px;
   color: black;
 }
+
 .menu-label {
   display: none;
 }
+
 /* Carrito  */
 .cart {
-  position: absolute;
+  position: fixed;
   top: 65px;
   right: 0;
   padding: 50px 30px;
   background-color: var(--color-4);
-  display: flex;
   flex-direction: column;
   gap: 30px;
   height: calc(100vh - 65px);
@@ -175,20 +192,25 @@
   min-width: 375px;
   transform: translate(200%);
   transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+  display: flex;
 }
+
 .cart::-webkit-scrollbar {
   display: none;
 }
+
 .cart-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 /* Modificar transición  */
 .open-cart {
   transform: translate(0%);
   transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
 }
+
 /* Main section  */
 .main__hero {
   align-items: center;
@@ -198,6 +220,7 @@
   height: calc(100vh - 55px);
   width: 100%;
 }
+
 .main__hero__presentation {
   display: flex;
   flex-direction: column;
@@ -205,12 +228,14 @@
   font-size: 48px;
   padding: 200px 100px;
 }
+
 .main__hero__presentation h2,
 h5 {
   background-color: var(--color-2);
   padding: 0px 4px;
   border-radius: 4px;
 }
+
 .main__hero__presentation h6 {
   border-radius: 4px;
   margin-bottom: 8px;
@@ -220,6 +245,7 @@ h5 {
   color: var(--color-1);
   background-color: var(--color-5);
 }
+
 /* Card Products */
 #plant__products__container {
   display: flex;
@@ -230,6 +256,7 @@ h5 {
   padding: 40px 0px;
   overflow-x: auto;
 }
+
 .product__container {
   display: flex;
   gap: 30px;
@@ -237,6 +264,7 @@ h5 {
   max-width: 100%;
   flex-wrap: wrap;
 }
+
 .card__container {
   display: flex;
   flex-direction: column;
@@ -249,6 +277,7 @@ h5 {
   border-radius: 8px;
   box-shadow: var(--shadow-elevation-medium);
 }
+
 .card__container img {
   width: 100%;
   height: 185px;
@@ -256,6 +285,7 @@ h5 {
   border-radius: 4px;
   box-shadow: var(--shadow-elevation-medium);
 }
+
 .card__info button {
   text-align: center;
   padding: 4px 8px;
@@ -265,24 +295,29 @@ h5 {
   border-radius: 8px;
   cursor: pointer;
 }
+
 .hidden {
   visibility: hidden;
 }
+
 .product__top {
   -webkit-text-stroke: 0.9px var(--black);
   font-size: 20px;
   color: var(--color-1);
 }
+
 .product__mid {
   color: var(--color-1);
   font-weight: 500;
   font-size: 22px;
 }
+
 .product__bot {
   font-size: 16px;
   color: var(--color-1);
   padding: 8px 0px;
 }
+
 /* Section of products  */
 .main__plant__container {
   display: flex;
@@ -290,16 +325,19 @@ h5 {
   justify-content: center;
   gap: 30px;
 }
+
 #main__plant__products {
   display: flex;
   flex-direction: column;
   padding: 50px 0px;
   gap: 40px;
 }
+
 #main__plant__products h2 {
   text-align: center;
   font-weight: 600;
 }
+
 .main__plant_product {
   display: flex;
   flex-direction: column;
@@ -310,18 +348,21 @@ h5 {
   box-shadow: var(--shadow-elevation-medium);
   border-radius: 10px;
 }
+
 .main__plant__products__img {
   max-width: 300px;
   height: 400px;
   object-fit: cover;
   border-radius: 4px;
 }
+
 .categories {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
+
 .category,
 .btn-show-more {
   background: var(--color-4);
@@ -333,11 +374,13 @@ h5 {
   border-radius: 10px;
   box-shadow: var(--shadow-elevation-low);
 }
+
 .category:hover,
 .btn-show-more:hover {
   transition: background-color 0.5s;
   background-color: var(--color-6);
 }
+
 /* Find Section  */
 .main__find {
   display: flex;
@@ -349,6 +392,7 @@ h5 {
   height: 400px;
   width: 100%;
 }
+
 .main__find__card {
   display: flex;
   flex-direction: column;
@@ -362,23 +406,28 @@ h5 {
   box-shadow: var(--shadow-elevation-high);
   border-radius: 5px;
 }
+
 .main__find__card h3 {
   font-weight: 600;
   font-size: 28px;
 }
+
 .main__find__card p span {
   text-decoration: underline;
 }
+
 /* About Us Section  */
 main {
   background-color: var(--color-1);
 }
+
 #main__about {
   display: flex;
   align-items: center;
   padding: 36px 0px;
   background-color: var(--color-1);
 }
+
 .main__about__us {
   display: flex;
   flex-direction: column;
@@ -386,10 +435,12 @@ main {
   align-items: center;
   gap: 36px;
 }
+
 .main__about__us h2 {
   font-weight: 600;
   font-size: 32px;
 }
+
 .about__us__p1 {
   padding: 12px 24px;
   text-align: center;
@@ -399,6 +450,7 @@ main {
   box-shadow: var(--shadow-elevation-medium);
   border-radius: 5px;
 }
+
 .about__us__p2 {
   padding: 12px 24px;
   text-align: center;
@@ -408,11 +460,13 @@ main {
   box-shadow: var(--shadow-elevation-medium);
   border-radius: 5px;
 }
+
 .about__us__p2 span {
   padding: 0px 3px;
   color: var(--color-1);
   background-color: var(--color-5);
 }
+
 .img-sierras {
   max-height: 80%;
   max-width: 50%;
@@ -420,6 +474,7 @@ main {
   border-radius: 10px;
   box-shadow: var(--shadow-elevation-high);
 }
+
 /* Contact Section */
 #main__contact {
   display: flex;
@@ -427,12 +482,14 @@ main {
   justify-content: space-evenly;
   background-color: var(--color-4);
 }
+
 .main__contact__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   box-shadow: var(--shadow-elevation-medium);
 }
+
 .main__contact__container p {
   padding: 6px 12px;
   background-color: var(--color-3);
@@ -440,14 +497,17 @@ main {
   font-size: 18px;
   border-radius: 5px;
 }
+
 .main__contact__form {
   padding: 20px 40px;
 }
+
 .main__contact__form form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .main__contact__form form input,
 textarea {
   font-family: 'Poppins';
@@ -459,12 +519,14 @@ textarea {
   border-radius: 3px;
   font-weight: 400;
 }
+
 #btn-submit {
   cursor: pointer;
   font-size: 14px;
   height: 32px;
   background-color: var(--color-2);
 }
+
 /* Footer Section  */
 footer {
   display: flex;
@@ -472,20 +534,24 @@ footer {
   justify-content: space-between;
   background-color: var(--color-5);
   color: var(--color-1);
-  padding: 80px 250px;
+  padding: 80px 50px;
 }
+
 .footer__container {
   display: flex;
   gap: 100px;
 }
+
 .footer__-principal-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .footer__tittle {
   padding-bottom: 12px;
 }
+
 #input__email__footer {
   font-family: Poppins;
   border: none;
@@ -495,6 +561,7 @@ footer {
   padding-left: 4px;
   font-size: 14px;
 }
+
 #input__btn__footer {
   cursor: pointer;
   font-family: 'Poppins';
